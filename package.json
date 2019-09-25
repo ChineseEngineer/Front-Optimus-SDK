@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ChineseEngineer/optimus-sdk.git"
+    "url": "https://github.com/ChineseEngineer/Front-Optimus-SDK.git"
   },
   "keywords": [
     "webpack",
@@ -27,9 +27,9 @@
   "author": "Krasimir Tsonev",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ChineseEngineer/optimus-sdk/issues"
+    "url": "https://github.com/ChineseEngineer/Front-Optimus-SDK/issues"
   },
-  "homepage": "https://github.com/ChineseEngineer/optimus-sdk",
+  "homepage": "https://github.com/ChineseEngineer/Front-Optimus-SDK",
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.51",
     "@babel/core": "^7.0.0-beta.51",

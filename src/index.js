@@ -13,7 +13,7 @@ const invokeDsBridge = (name, params = {}) => {
   }
 }
 
-export default {
+const Optimus = {
   /**
    * 分享
    * @param params
@@ -89,4 +89,18 @@ export default {
   wxNativePay: (params) => {
     return invokeDsBridge('wxNativePay', params)
   }
+}
+
+const install = function (Vue, options) {
+  if (install.installed) return
+  Vue.prototype.$op = Optimus
+}
+
+/* 支持使用标签的方式引入 */
+if (typeof window !== 'undefined' && window.Vue) {
+  install(window.Vue)
+}
+
+export default {
+  install
 }
