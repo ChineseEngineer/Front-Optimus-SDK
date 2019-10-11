@@ -88,6 +88,14 @@ const Optimus = {
   },
   wxNativePay: (params) => {
     return invokeDsBridge('wxNativePay', params)
+  },
+  /**
+   * 获取高德定位信息
+   * @param params
+   * @return {any}
+   */
+  getAMapLoc: (params) => {
+    return invokeDsBridge('getAMapLoc', params)
   }
 }
 
