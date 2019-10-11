@@ -11,7 +11,7 @@ let outputFile, mode, sourceMap
 
 if (env === 'build') {
   mode = 'production'
-  sourceMap = false
+  sourceMap = 'false'
   outputFile = libraryName + '.min.js'
 } else {
   mode = 'development'
