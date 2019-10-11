@@ -4,6 +4,7 @@
   "description": "Produce universal library with webpack and es6",
   "main": "lib/optimus-sdk.js",
   "scripts": {
+    "release": "bash release.sh",
     "build": "webpack --env dev && webpack --env build",
     "dev": "webpack --progress --colors --watch --env dev",
     "test": "mocha --require babel-register --colors ./test/*.spec.js",
