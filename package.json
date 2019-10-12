@@ -1,6 +1,6 @@
 {
   "name": "optimus-sdk",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Produce universal library with webpack and es6",
   "main": "lib/optimus-sdk.js",
   "scripts": {
