@@ -2,13 +2,18 @@ import dsbridge from 'dsbridge'
 
 const invokeDsBridge = (name, params = {}) => {
   if (!dsbridge) {
-    window.alert('no supported')
+    window.alert('no supported, 请在车主惠APP内使用')
   } else {
-    return dsbridge.call(name, params, (res) => {
-      if (params.success && typeof params.success === 'function') {
-        res = JSON.parse(res)
-        return params.success(res)
-      }
+    return new Promise(function (resolve, reject) {
+      dsbridge.call(name, params, function (res) {
+        if (res) {
+          res = JSON.parse(res)
+          res.code = +res.code
+          resolve(res)
+        } else {
+          reject(res)
+        }
+      })
     })
   }
 }
