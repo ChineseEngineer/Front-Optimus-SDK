@@ -111,7 +111,7 @@ const Optimus = {
     return invokeDsBridge('getWebHeadInfo', params)
   },
   /**
-   * 混合开发特殊事件
+   * 混合开发特殊事件 ps: 首页礼包交互
    * @param params
    * @return {Promise<any>}
    */
