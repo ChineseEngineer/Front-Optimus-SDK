@@ -109,6 +109,14 @@ const Optimus = {
    */
   getWebHeadInfo: (params) => {
     return invokeDsBridge('getWebHeadInfo', params)
+  },
+  /**
+   * 混合开发特殊事件
+   * @param params
+   * @return {Promise<any>}
+   */
+  hybridEvent: (params) => {
+    return invokeDsBridge('hybridEvent', params)
   }
 }
 
