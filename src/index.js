@@ -101,6 +101,14 @@ const Optimus = {
    */
   getAMapLoc: (params) => {
     return invokeDsBridge('getAMapLoc', params)
+  },
+  /**
+   * 获取头部信息 状态栏高度、是否使用了原生头
+   * @param params
+   * @return {Promise<any>}
+   */
+  getWebHeadInfo: (params) => {
+    return invokeDsBridge('getWebHeadInfo', params)
   }
 }
 
