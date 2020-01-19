@@ -117,6 +117,22 @@ const Optimus = {
    */
   hybridEvent: (params) => {
     return invokeDsBridge('hybridEvent', params)
+  },
+  /**
+   * 同意隐私协议
+   * @param params
+   * @return {Promise<any>}
+   */
+  confirmAgreement: (params) => {
+    return invokeDsBridge('confirmAgreement', params)
+  },
+  /**
+   * 不同意隐私协议
+   * @param params
+   * @return {Promise<any>}
+   */
+  disagreeAgreement: (params) => {
+    return invokeDsBridge('disagreeAgreement', params)
   }
 }
 
