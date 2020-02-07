@@ -133,6 +133,14 @@ const Optimus = {
    */
   disagreeAgreement: (params) => {
     return invokeDsBridge('disagreeAgreement', params)
+  },
+  /**
+   * 退出app
+   * @param params
+   * @return {Promise<any>}
+   */
+  exitApp: (params) => {
+    return invokeDsBridge('exitApp', params)
   }
 }
 
