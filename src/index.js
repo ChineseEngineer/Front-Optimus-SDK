@@ -141,6 +141,14 @@ const Optimus = {
    */
   exitApp: (params) => {
     return invokeDsBridge('exitApp', params)
+  },
+  /**
+   * 关闭弹层webview
+   * @param params
+   * @return {Promise<any>}
+   */
+  closePopWebView: (params) => {
+    return invokeDsBridge('closePopWebView', params)
   }
 }
 
